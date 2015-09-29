@@ -17,7 +17,7 @@
         <article>
     
        	<h1>Welcome</h1>
-            <p>Hi there! This website will feature my work in CIT 336 during the Fall 2015 semester.</p>
+            <p>Hi there! This website will feature my work in CIT 336 during the Fall 2015 semester. This is a test.</p>
             <img src="images/jacie-profile.jpg" alt="profile picture">
         
       
