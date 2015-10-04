@@ -1,0 +1,21 @@
+# Use PHP5.4 as default
+AddHandler application/x-httpd-php54 .php
+
+
+# disable directory listing - keeps site visitors from 
+# seeing the contents of a folder if a default page 
+# is not provided in the folder
+Options -Indexes
+
+# Turn on the Rewrite Engine
+RewriteEngine on
+# For production server
+# use your domain name (mydomain.net)
+# If using a subdomain include it 
+# (e.g. sandbox.mydomain.net)
+RewriteCond %{HTTP_HOST} ^cit336.jacieames.com$ [NC,OR]
+# For local development server - usually named localhost
+RewriteCond %{HTTP_HOST} ^localhost$ [NC]
+# Send to the public folder
+RewriteCond %{REQUEST_URI} !public/
+RewriteRule (.*) /public/$1 [L]

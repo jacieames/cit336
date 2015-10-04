@@ -115,7 +115,6 @@ a.top-nav-a:hover {
 
 li {
     font-family: Lato, sans-serif;
-    text-transform: uppercase;
 
 }
 
@@ -168,7 +167,7 @@ li {
 /* unvisited link */
 a:link {
     color: #13798b;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 /* visited link */
